@@ -33,4 +33,4 @@ jobs:
         uses: docker/build-push-action@v3
         with:
           push: true
-          tags: vvmmxpdfservicecr.azurecr.io/travellist:1.${{ steps.buildnumber.outputs.build_number }} , vvmmxpdfservicecr.azurecr.io/travellist:latest
+          tags: vvmmxpdfservicecr.azurecr.io/vvm-ms-pdf:1.${{ steps.buildnumber.outputs.build_number }} , vvmmxpdfservicecr.azurecr.io/vvm-ms-pdf:latest
