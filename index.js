@@ -6,7 +6,7 @@ const sowTemplate = require('./src/templates/sowTemplate.js')
 const invoiceTemplate = require('./src/templates/invoiceTemplate.js')
 var fs = require("fs");
 
-port = process.env.PORT || 5000;
+port = process.env.PORT || 3000;
 
 app.use(express.json());
 app.use(cors())
