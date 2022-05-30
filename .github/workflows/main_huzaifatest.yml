@@ -22,12 +22,12 @@ jobs:
         with:
           token: ${{secrets.token}}
       -
-        name: Login to DockerHub
+        name: ACR
         uses: azure/docker-login@v1
         with:
           login-server: vvmmxpdfservicecr.azurecr.io
-          username: ${{ secrets.ACR_USERNAME }}
-          password: ${{ secrets.ACR_PASSWORD }}
+          username: ${{ secrets.VVM_MX_CR_SECRET_NAME }}
+          password: ${{ secrets.VVM_MX_CR_SECRET }}
       -
         name: Build and push
         uses: docker/build-push-action@v3
